@@ -3,7 +3,6 @@
 * {
 
     margin: 0;
-
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -17,6 +16,7 @@
     --bg-color: #fdfdfd;
     --text-color: #333;
     --main-color: #754ef9;
+    /* --main-color: #4e5bf9; */
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .2);
 }
@@ -151,8 +151,10 @@ section {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    width: 768px;
-    height: 768px;
+    /* width: 768px; */
+    /* height: 768px; */
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     pointer-events: none;
 }
@@ -208,4 +210,23 @@ section {
     border-radius: 50%;
 }
 
-/* 29:03 */
+/* 31:30 */
+.home .profession-container .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 384px solid var(--main-color);
+    border-right: 384px solid var(--main-color);
+    border-bottom: 384px solid var(--main-color);
+    border-left: 384px solid transparent;
+}
+
+.home-img img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    pointer-events: none;
+}
