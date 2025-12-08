@@ -7,14 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio Website Design - Leticia Tassinari</title>
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <!-- header design -->
+    <!-- header -->
     <header class="header">
         <a href="#" class="logo">Portifolio.</a>
         <nav class="navbar">
@@ -28,7 +33,7 @@
         <div class="bx bx-moon" id="darkMode-icon"></div>
     </header>
 
-    <!-- home design -->
+    <!-- home -->
     <section class="home" id="home">
         <div class="home-content">
             <h3>Olá, eu sou a</h3>
@@ -79,9 +84,8 @@
         </div>
     </section>
 
-    <!-- about section design -->
-
-    <section class="about" id="about">
+    <!-- sobre mim -->
+    <section class="about" id="sobre">
         <div class="about-img">
             <img src="images/about.png" alt="">
         </div>
@@ -97,7 +101,124 @@
         </div>
     </section>
 
-    <!-- custom js -->
+    <!-- serviços -->
+    <section class="services" id="servicos">
+        <h2 class="heading">Meus <span>Serviços</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nostrum numquam culpa ratione explicabo
+                    dicta laborum eos aliquid quaerat error, obcaecati ducimus.</p>
+                <a href="" class="btn">Ler Mais</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Graphic Designer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nostrum numquam culpa ratione explicabo
+                    dicta laborum eos aliquid quaerat error, obcaecati ducimus.</p>
+                <a href="" class="btn">Ler Mais</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nostrum numquam culpa ratione explicabo
+                    dicta laborum eos aliquid quaerat error, obcaecati ducimus.</p>
+                <a href="" class="btn">Ler Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- portifolio -->
+    <section class="portifolio" id="portifolio">
+        <h2 class="heading">Últimos <span>Projetos</span></h2>
+
+        <div class="portifolio-container">
+
+            <div class="portifolio-box">
+                <img src="images/portfolio1.jpg" alt="">
+
+                <div class="portifolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, qui consequuntur.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portifolio-box">
+                <img src="images/portfolio2.jpg" alt="">
+
+                <div class="portifolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, qui consequuntur.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portifolio-box">
+                <img src="images/portfolio3.jpg" alt="">
+
+                <div class="portifolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, qui consequuntur.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portifolio-box">
+                <img src="images/portfolio4.jpg" alt="">
+
+                <div class="portifolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, qui consequuntur.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portifolio-box">
+                <img src="images/portfolio5.jpg" alt="">
+
+                <div class="portifolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, qui consequuntur.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portifolio-box">
+                <img src="images/portfolio6.jpg" alt="">
+
+                <div class="portifolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, qui consequuntur.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- depoimentos -->
+    <div class="testimonial-container">
+        <h2 class="heading">Depoimentos</h2>
+
+        <div class="testimonial-wrapper">
+            <div class="testimonial-box" mySwiper>
+                <div class="testimonial-content" swiper-wrapper>
+                    <div class="testimonial-slide" swiper-slide>
+                        <img src="images/testimonial1.jpg" alt="">
+                        <h3>Jackson Levi</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptatum maiores nihil
+                            fugit dolorem nesciunt! Voluptatibus incidunt delectus accusantium nam atque exercitationem
+                            quia qui at, repellat fugiat consectetur ex dignissimos alias laboriosam debitis quae quidem
+                            nostrum maxime reprehenderit architecto numquam! Illo, blanditiis excepturi porro, cum,
+                            aperiam tempore placeat eligendi maxime in sit laborum labore cumque voluptatibus cupiditate
+                            eum a?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- custom ja -->
     <script src="../js/script.js"></script>
 </body>
 
