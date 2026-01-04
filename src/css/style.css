@@ -130,14 +130,13 @@ section {
 .home-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
-    /* line-height: .3; */
-    line-height: .8;
+    line-height: 1.8;
 }
 
 .home-content h1 {
     font-size: 5.2rem;
     font-weight: 700;
-    margin-bottom: .3rem;
+    margin-bottom: 1.3rem;
 }
 
 .home-content p {
@@ -797,7 +796,7 @@ span {
     }
 
     .home-content .social-media a {
-        margin: 2.5rem .75rem 3rem;
+        margin: 3rem .75rem 4rem;
     }
 
     .home .profession-container {
@@ -808,7 +807,7 @@ span {
 
     .home .profession-container .profession-box {
         position: fixed;
-        top: 60%;
+        top: 80%;
         left: 0;
         border-radius: 0;
         width: 100%;
@@ -849,11 +848,15 @@ span {
 
     .home .profession-container .overlay {
         position: fixed;
-        top: 70rem;
+        top: 80rem;
         left: 50%;
         right: 0;
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
         border-width: 23.9rem;
+    }
+
+    .social-media {
+        justify-content: center;
     }
 
     .about {
@@ -897,6 +900,10 @@ span {
     .portifolio .portifolio-container {
         grid-template-columns: 1fr;
     }
+
+    .social-media {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 450px) {
@@ -909,7 +916,7 @@ span {
     }
 
     .home {
-        padding: 0 3% 30rem;
+        padding: 0 5% 20rem;
     }
 
     .home .profession-box .profession:nth-child(1) {
@@ -928,6 +935,10 @@ span {
         transform: rotate(180deg) translate(-210px, -335px);
     }
 
+    .social-media {
+        justify-content: center;
+    }
+
     .contact form .input-box input {
         width: 100%;
     }
@@ -936,6 +947,10 @@ span {
 @media (max-width: 365px) {
     .about-img img {
         width: 90vw;
+    }
+
+    .social-media {
+        justify-content: center;
     }
 
     .footer {
