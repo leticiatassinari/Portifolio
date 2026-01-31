@@ -33,6 +33,10 @@ window.onscroll = () => {
     /*========= remove menu icon navbar quando clicar no navbar link (scroll) =========*/
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
+
+    /*========= scroll to top button =========*/
+    let scrollTopBtn = document.querySelector('.footer-iconTop');
+    scrollTopBtn.classList.toggle('show', window.scrollY > 100);
 };
 
 /*========= swiper =========*/
